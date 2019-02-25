@@ -1,0 +1,20 @@
+Manual Setup
+
+ssh-keygen -t rsa -b 2048 -C "unixadm@home"
+
+ls -al ~/.ssh
+-rw------- 1 azureuser staff  1675 Aug 25 18:04 id_rsa
+-rw-r--r-- 1 azureuser staff   410 Aug 25 18:04 id_rsa.pub
+
+Added Ip to /etc/hosts File
+
+ssh-copy-id unixadm@webserver
+ssh-copy-id unixadm@dbserver
+
+For Each
+usermod -aG wheel unixadm
+chmod 700 /etc/sudoers
+unixadm ALL=(ALL) NOPASSWD: ALL
+chmod 0440 /etc/sudoers
+
+Completed.
