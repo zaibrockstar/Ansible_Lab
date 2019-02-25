@@ -1,0 +1,15 @@
+Home Server
+
+sudo yum install epel-release
+yum install ansible
+
+
+[unixadm@Home ansible]$ ls -ld /etc/ansible/
+drwxr-xr-x. 3 unixadm unixadm 51 Feb 25 18:54 /etc/ansible/
+[unixadm@Home ansible]$ ls -l /etc/ansible/
+total 24
+-rw-r--r--. 1 root root 20277 Feb  8 04:41 ansible.cfg
+-rw-r--r--. 1 root root  1016 Feb  8 04:41 hosts
+drwxr-xr-x. 2 root root     6 Feb  8 04:41 roles
+[unixadm@Home ansible]$
+
