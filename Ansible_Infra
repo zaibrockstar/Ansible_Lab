@@ -1,0 +1,8 @@
+Azure Hosted Ansible Lab
+
+3 Hosts
+One Crontrol Server
+Web Server
+DB Server
+
+Setup SSH Authentication among them.
